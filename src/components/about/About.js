@@ -20,10 +20,10 @@ const useStyles = makeStyles((theme) => ({
 export const About = () => {
   const classes = useStyles();
   const greetings = "Hello there!";
-  const aboutme = `I'm ${FirstName} ${LastName}, a multidisciplinary 
-                  designer & developer. I'm always down for something new and challenging!
-                  I'm here to help you create beautifully formatted websites. 
-                  My projects mostly includes web development.`;
+  const aboutme = `I'm ${FirstName} ${LastName}, a fullstack 
+                  developer. I'm always down for something new and challenging!
+                  I'm here to help you create beautifully formatted application. 
+                  My projects mostly includes web and mobile development.`;
 
   return (
     <section id="about">
