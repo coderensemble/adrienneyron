@@ -1,5 +1,4 @@
 import React from 'react';
-import { LogoLink } from '../components/logo/LogoLink';
 import { Content } from '../components/content/Content';
 import { Hidden } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
@@ -12,6 +11,7 @@ import { SideNavbar } from '../components/nav/SideNavbar';
 import { Works } from '../components/works/Works';
 import { About } from '../components/about/About';
 import { Contact } from '../components/contact/Contact';
+// import { ReactComponent as Logo } from '../assets/an-logo.svg';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -28,7 +28,7 @@ export const Home = () => {
     <>
       <div className={classes.root} id="home">
         <DisplacementSphere />
-        <LogoLink />
+        {/* <Logo style={{ width: '10%', height: '10%', paddingTop:'5%', paddingLeft:'3%' }}/> */}
         <Content />
         <ThemeToggle />
         <Hidden smDown>

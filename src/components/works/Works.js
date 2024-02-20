@@ -8,11 +8,11 @@ import { TextDecrypt } from "../content/TextDecrypt";
 import './Works.css';
 
 // Import ../../assets/recentprojects/
-import Portfolio from '../../assets/recentprojects/react-portfolio.png';
-import Veritru from '../../assets/recentprojects/veritru.png';
-import Lofo from '../../assets/recentprojects/lofo.png';
-import Startup from '../../assets/recentprojects/startup.png';
-import Lacalle from '../../assets/recentprojects/lacalle.png';
+import AspiSport from '../../assets/recentprojects/aspirationSport.png';
+import PortFam from '../../assets/recentprojects/portfam.png';
+import Cpaie from '../../assets/recentprojects/cpaie.png';
+import DressMeUp from '../../assets/recentprojects/dressmeup.png';
+import Morning from '../../assets/recentprojects/morning.png';
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -27,46 +27,56 @@ export const Works = () => {
   const [projects, setProjects] = useState([
     { 
       id: 1,
-      title: 'React Portfolio', 
-      description: `Designed and developed a ReactJS portfolio 
-      with fancy 3D animations using Three.js for 
-      the background element.`,
-      alter: 'React Portfolio',
-      image: `${Portfolio}`,
+      title: 'C + Paie', 
+      description: `Showcase site in React & TailwindCSS to increase the visibility and sales of the company`,
+      href:`none`,
+      hrefCode:`none`,
+      alt: 'C + Paie',
+      image: `${Cpaie}`,
     },
     { 
       id: 2,
-      title: 'VeriTru Project', 
-      description: `An advocacy project website built using
-      MEAN stack with fact-checking tool to promote actions against
-      fake news.`,
-      alter: 'VeriTru Project',
-      image: `${Veritru}`,
+      title: 'Dress Me Up', 
+      description: `A mobile dressing room to prepare your outfits from wherever you want. Within a team of 3 developers,
+      we used the following technologies to create the mobile application:
+      React Native, Expo, Node Js, and a Mongo Db database`,
+      href:`none`,
+      hrefCode:`https://github.com/coderensemble/dressMeUp-backend`,
+      alt: 'Dress Me Up',
+      image: `${DressMeUp}`,
     },
     { 
       id: 3,
-      title: 'LoFo Project', 
-      description: `Logistics and Forwarding website built using
-      ReactJS to design and develop its front-end.`,
-      alter: 'LoFo Project',
-      image: `${Lofo}`,
+      title: 'Morning News', 
+      description: `A web application with secure authentication
+      which allows you to organize a personal playlist from an API.
+      User information is stored in database.
+      React, Node and mongo DB were the main technologies used.`,
+      href:`https://morning-frontend-topaz.vercel.app/`,
+      alt: 'Morning News',
+      image: `${Morning}`,
     },
     { 
       id: 4,
-      title: 'Startup Project', 
-      description: `A website portfolio project for the Startup Dev Team
-      built using MEVN stack to demonstrate the CRUD capabilities of the tech stack.`,
-      alter: 'Startup Project',
-      image: `${Startup}`,
+      title: 'Portail Famille', 
+      description: `Web/mobile application simplifying registrations and tracking
+      extracurricular. Developed with React Native, PHP Symfony and a
+       Secure SQL database. The mobile app is still under construction.`,
+       href:`none`,
+       hrefCode:`https://github.com/coderensemble/Collectivite`,
+      alt: 'Portail Famille',
+      image: `${PortFam}`,
     },
     { 
       id: 5,
-      title: 'LaCalle Cafe', 
-      description: `A website project for the La Calle Cafe business
-      built using Wordpress and PHP with integrated SEO tools to help
-      the business ramp up its prospects and lead generation.`,
-      alter: 'Startup Project',
-      image: `${Lacalle}`,
+      title: 'Aspiration Sport', 
+      description: `I created Aspiration Sport: an online sports coaching platform,
+       combining technical expertise and passion for sport. I used React, node and mongo DB to did it. 
+       The web app is still under construction.`,
+       href:`none`,
+       hrefCode:`none`,
+      alt: 'Aspiration Sport',
+      image: `${AspiSport}`,
     },
   ]);
 
@@ -85,6 +95,10 @@ export const Works = () => {
               <p className="description">
                 { project.description }
               </p>
+              <div className="link">
+              {project.href !== 'none' && (<p><a href={project.href} target="_blank" rel="noopener noreferrer" style={{color:'grey', textDecoration:'none'}}>See the website</a></p>)}
+              {project.hrefCode !== 'none' && (<p><a href={project.hrefCode} target="_blank" rel="noopener noreferrer" style={{color:'grey', textDecoration:'none'}}>Explore the code</a></p>)}
+              </div>
             </div>
           </div>
         ))}
