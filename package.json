@@ -1,9 +1,9 @@
 {
-  "name": "react-portfolio",
+  "name": "adrienneyron",
   "version": "0.1.0",
   "homepage": "",
   "description": "A clean and customizable ReactJS portfolio template for fellow developers. Credits to Jo Lienhoop!",
-  "repository": "https://github.com/taniyow/react-portfolio",
+  "repository": "https://github.com/coderensemble/adrienneyron",
   "author": "Adrien Neyron <adrien.neyron@gmail.com>",
   "license": "MIT",
   "dependencies": {
