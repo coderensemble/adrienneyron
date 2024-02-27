@@ -194,7 +194,7 @@ export const DarkTheme = responsiveFontSizes(
         tooltip: {
           fontFamily: 'Roboto Mono, monospace',
           backgroundColor: primary,
-          color: white,
+          color: black,
           fontSize: 12,
         },
       },

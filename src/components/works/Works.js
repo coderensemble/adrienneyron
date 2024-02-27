@@ -96,8 +96,8 @@ export const Works = () => {
                 { project.description }
               </p>
               <div className="link">
-              {project.href !== 'none' && (<p><a href={project.href} target="_blank" rel="noopener noreferrer" style={{color:'grey', textDecoration:'none'}}>See the website</a></p>)}
-              {project.hrefCode !== 'none' && (<p><a href={project.hrefCode} target="_blank" rel="noopener noreferrer" style={{color:'grey', textDecoration:'none'}}>Explore the code</a></p>)}
+              {project.href !== 'none' && (<p><a href={project.href} target="_blank" rel="noopener noreferrer" style={{color:'#d8b88d', textDecoration:'none'}}>See the website</a></p>)}
+              {project.hrefCode !== 'none' && (<p><a href={project.hrefCode} target="_blank" rel="noopener noreferrer" style={{color:'#d8b88d', textDecoration:'none'}}>Explore the code</a></p>)}
               </div>
             </div>
           </div>

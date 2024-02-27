@@ -26,7 +26,8 @@
 .submit-btn:hover {
   margin-right: 20px;
   text-decoration: none;
-  background-color: #ec704c;
+  background-color: #d8b88d;
+  color: #0a0a0a;
 }
 
 .contact_msg {

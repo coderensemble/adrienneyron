@@ -27,12 +27,12 @@ export const About = () => {
 
   return (
     <section id="about">
-      <Container component="main" className={classes.main} maxWidth="md">
+      <Container component="main" className={classes.main} maxWidth="md" id='main'>
         <div className="about">
           <div className="_img"
             style={{ 
               background: "url(" + profile + ")",
-              backgroundSize: 'contain',
+              backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
             }}

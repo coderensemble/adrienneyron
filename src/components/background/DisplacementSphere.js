@@ -83,7 +83,7 @@ const DisplacementSphere = (props) => {
             shader.lights = true;
         };
 
-        geometry.current = new SphereBufferGeometry(32, 128, 128);
+        geometry.current = new SphereBufferGeometry(32, 160, 128);
 
         sphere.current = new Mesh(geometry.current, material.current);
         sphere.current.position.z = 0;
@@ -98,12 +98,12 @@ const DisplacementSphere = (props) => {
 
     useEffect(() => {
         const dirLight = new DirectionalLight(
-            rgbToThreeColor("250 250 250"),
+            rgbToThreeColor("0 250 0"),
             0.6
         );
         const ambientLight = new AmbientLight(
-            rgbToThreeColor("250 250 250"),
-            theme === "light" ? 0.8 : 0.1
+            rgbToThreeColor("250 10 110"),
+            theme === "light" ? 0.95 : 0.4
         );
 
         dirLight.position.z = 200;

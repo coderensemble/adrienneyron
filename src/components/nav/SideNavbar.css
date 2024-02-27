@@ -14,8 +14,8 @@ nav a {
 nav a:hover {
   margin-right: 20px;
   text-decoration: none;
-  color: #ec704c;
+  color: #d8b88d;
 }
 nav a.active {
-  color: #ec704c;
+  color: #d8b88d;
 }
